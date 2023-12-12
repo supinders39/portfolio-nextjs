@@ -42,25 +42,19 @@ const Experience = () => {
                         company={"ItConnectUs"}
                         address={"Mohali, India"}
                         time={"Jan-2019 - Apr-2019"}
-                        work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization." />
+                        work="As a Graphics Designer at ITConnectUs, I was responsible for defining and maintaining the company's visual identity, creating captivating designs for web interfaces and marketing materials, and collaborating cross-functionally to align design with business goals. My role contributed to enhancing the company's brand and user engagement through creative and user-centric design." />
                     <Details
                         position={"Frontend Developer"}
                         company={"FocalCode"}
                         address={"Mohali, India"}
                         time={"May-2019 - Sep-2019"}
-                        work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization." />
+                        work="At FocalCode, I specialized in Angular, CSS, HTML, and JavaScript to create responsive web interfaces. I developed complex features, optimized performance, and collaborated closely with cross-functional teams to ensure high-quality code and outstanding user experiences." />
                     <Details
                         position={"Tech Lead/Full Stack Developer"}
                         company={"Codeferns Technologies"}
                         address={"Chandigarh, India"}
                         time={"Oct-2019 - Dec-2023"}
-                        work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization." />
+                        work="At Codeferns Technologies, I excelled in dual roles. As a Tech Lead, I provided strategic guidance and mentorship, fostering innovation. Simultaneously, I led full stack development efforts using ReactJS, React Native, Angular, NodeJs and more. My impact extended from project delivery to code quality, and I consistently drove innovation." />
                 </ul>
             </div>
         </div>

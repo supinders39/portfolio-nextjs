@@ -52,7 +52,7 @@ const NavBar = () => {
         <header className="w-full px-32 py-8 font-medium flex items-center justify-between 
         dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8
         ">
-            <button className="flex-col justify-center items-center hidden lg:flex" onClick={handleClick}>
+            <button className="flex-col justify-center items-center hidden lg:!flex" onClick={handleClick}>
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
@@ -62,17 +62,22 @@ const NavBar = () => {
                 <nav>
                     <CustomLink title="Home" href="/" className="mr-4" />
                     <CustomLink title="About" href="/about" className="mx-4" />
-                    <CustomLink title="Projects" href="/projects" className="mx-4" />
-                    <CustomLink title="Articles" href="/articles" className="ml-4" />
+                    {/* <CustomLink title="Projects" href="/projects" className="mx-4" />
+                    <CustomLink title="Articles" href="/articles" className="ml-4" /> */}
                 </nav>
 
 
                 <nav className="flex items-center justify-center flex-wrap ">
-                    <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 mr-3" href="https://twitter.com" target="_blank"><TwitterIcon /></motion.a>
-                    <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 mx-3" href="https://twitter.com" target="_blank"><GithubIcon /></motion.a>
+                    {/* <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 mr-3" href="https://twitter.com" target="_blank"><TwitterIcon /></motion.a> */}
+                    <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 flex flex-col items-center justify-center mr-4" href="https://github.com/supinders39" target="_blank"><GithubIcon />
+                    <span className="text-[.6rem] mt-0">Personal</span>
+                    </motion.a>
+                    <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 flex flex-col items-center justify-center mx-4" href="https://drive.google.com/file/d/1NoXtmxkwQH5sgMk3Itpcail_UZ-8Vq-9/view?usp=sharing" target="_blank"><GithubIcon />
+                    <span className="text-[.6rem] mt-0">Company</span>
+                    </motion.a>
                     <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 mx-3" href="https://twitter.com" target="_blank"><LinkedInIcon /></motion.a>
-                    <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 mx-3 bg-light rounded-full" href="https://twitter.com" target="_blank"><PinterestIcon /></motion.a>
-                    <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 ml-3" href="https://twitter.com" target="_blank"><DribbbleIcon /></motion.a>
+                    {/* <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 mx-3 bg-light rounded-full" href="https://twitter.com" target="_blank"><PinterestIcon /></motion.a> */}
+                    {/* <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 ml-3" href="https://twitter.com" target="_blank"><DribbbleIcon /></motion.a> */}
                     <button onClick={() => setMode(mode === "light" ? "dark" : "light")}
                         className={`ml-3 flex items-center justify-center rounded-full p-1 
                     ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
@@ -96,19 +101,24 @@ const NavBar = () => {
                 <nav className="flex items-center flex-col justify-center">
                     <CustomMobileLink title="Home" href="/" className="" toggle={handleClick} />
                     <CustomMobileLink title="About" href="/about" className="" toggle={handleClick} />
-                    <CustomMobileLink title="Projects" href="/projects" className="" toggle={handleClick} />
-                    <CustomMobileLink title="Articles" href="/articles" className="" toggle={handleClick} />
+                    {/* <CustomMobileLink title="Projects" href="/projects" className="" toggle={handleClick} />
+                    <CustomMobileLink title="Articles" href="/articles" className="" toggle={handleClick} /> */}
                 </nav>
 
 
                 <nav className="flex items-center justify-center flex-wrap mt-2">
-                    <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 mr-3 sm:mx-1" href="https://twitter.com" target="_blank"><TwitterIcon /></motion.a>
-                    <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 mx-3 sm:mx-1 bg-light rounded-full dark:bg-dark" href="https://twitter.com" target="_blank"><GithubIcon /></motion.a>
-                    <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 mx-3 sm:mx-1" href="https://twitter.com" target="_blank"><LinkedInIcon /></motion.a>
-                    <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 mx-3 sm:mx-1 bg-light rounded-full" href="https://twitter.com" target="_blank"><PinterestIcon /></motion.a>
-                    <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 ml-3 sm:mx-1" href="https://twitter.com" target="_blank"><DribbbleIcon /></motion.a>
+                    {/* <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 mr-3 sm:mx-1" href="https://twitter.com" target="_blank"><TwitterIcon /></motion.a> */}
+                    <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="flex flex-col items-center justify-center w-6 mr-5 sm:mr-5 bg-light rounded-full dark:bg-dark" href="https://github.com/supinders39" target="_blank"><GithubIcon />
+                     <span className="text-[.6rem] mt-0 bg-light dark:bg-dark rounded px-1">Personal</span>
+                    </motion.a>
+                    <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="flex flex-col items-center justify-center w-6 mx-5 sm:mx-5 bg-light rounded-full  px-1-full dark:bg-dark" href="https://drive.google.com/file/d/1NoXtmxkwQH5sgMk3Itpcail_UZ-8Vq-9/view?usp=sharing" target="_blank"><GithubIcon />
+                     <span className="text-[.6rem] mt-0 bg-light dark:bg-dark rounded px-1">Company</span>
+                    </motion.a>
+                    <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 mx-3 sm:ml-3" href="https://twitter.com" target="_blank"><LinkedInIcon /></motion.a>
+                    {/* <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 mx-3 sm:mx-1 bg-light rounded-full" href="https://twitter.com" target="_blank"><PinterestIcon /></motion.a> */}
+                    {/* <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className="w-6 ml-3 sm:mx-1" href="https://twitter.com" target="_blank"><DribbbleIcon /></motion.a> */}
                     <button onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                        className={`ml-3 flex items-center justify-center rounded-full p-1 
+                        className={`ml-2 flex items-center justify-center rounded-full p-1 
                     ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
                     >
                         {

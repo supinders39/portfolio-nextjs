@@ -31,11 +31,10 @@ export default function Home() {
               <AnimatedText className='!text-6xl !text-left 
               xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl
               ' text={"Turning Vision Into Reality With Code And Design. "} />
-              <p className='my-4 text-base font-medium md:text-sm sm:text-xs '>As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
-                Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+              <p className='my-4 text-base font-medium md:text-sm sm:text-xs '>As an adept full-stack developer, I am committed to transforming concepts into cutting-edge web and mobile applications. Delve into my recent projects to witness my proficiency in both web and mobile development, crafting solutions that push boundaries and drive innovation.
               </p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
-                <Link href="/dummy.pdf" target='_blank'
+                <Link href="/Supinder-CV.pdf" target='_blank'
                   className='flex items-center bg-dark text-light p-2.5 
                 px-6 rounded-lg text-lg font-semibold
                  hover:bg-light hover:text-dark 

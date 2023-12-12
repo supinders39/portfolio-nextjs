@@ -39,25 +39,10 @@ const Education = () => {
                 <ul className="w-full flex flex-col justify-between ml-4 xs:ml-2 ">
 
                     <Details
-                        type={"Bachelor Of Science In Computer Science"}
-                        time={"2016-2020 "}
-                        place={"Massachusetts Institute Of Technology (MIT)"}
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence."
-                       />
-                    <Details
-                        type={"Bachelor Of Science In Computer Science"}
-                        time={"2016-2020 "}
-                        place={"Massachusetts Institute Of Technology (MIT)"}
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence."
-                       />
-                    <Details
-                        type={"Bachelor Of Science In Computer Science"}
-                        time={"2016-2020 "}
-                        place={"Massachusetts Institute Of Technology (MIT)"}
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence."
+                        type={"Master of Computer Applications"}
+                        time={"2016-2029"}
+                        place={"Chandigarh University (India)"}
+                        info="During my Master of Computer Applications (MCA) program, I gained proficiency in various programming languages such as Java, C, C++, Python, and JavaScript. I completed real-world projects, honed my problem-solving skills, and engaged in research on emerging technologies. Collaborative teamwork and a thesis project were integral parts of my academic journey. Additionally, I built valuable connections with professors and peers. My MCA experience provided a strong foundation for a successful career in technology and software development."
                        />
                 </ul>
             </div>
