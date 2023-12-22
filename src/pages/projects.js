@@ -7,12 +7,13 @@ import Link from "next/link";
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
 import trackify from "../../public/images/projects/trackify.jpeg"
 import breadit from "../../public/images/projects/breadit.jpg"
+import whatsapp from "../../public/images/projects/whatsapp.jpg"
 import ytLogo from "../../public/yt_logo.png"
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 const FramerImage = motion(Image)
 
-const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+const FeaturedProject = ({ type, title, summary, img, link, github, youtube }) => {
     return (
         <article className="w-full flex items-center justify-between relative rounded-br-2xl
         rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light 
@@ -35,10 +36,14 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
                     <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">{title}</h2>
                 </Link>
                 <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">{summary}</p>
-                <div className="flex mt-2 items-center ">
+                <div className="flex mt-2 items-center gap-5">
                     <Link href={github} target="_blank" className="w-10 "><GithubIcon /></Link>
+                    {youtube &&
+                        <Link href={youtube} target="_blank" className="">
+                            <Image className="w-24 md:w-18  object-contain" src={ytLogo} />
+                        </Link>}
                     <Link href={link} target="_blank"
-                        className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg 
+                        className="rounded-lg bg-dark text-light p-2 px-6 text-lg 
                     font-semibold dark:bg-light dark:text-dark
                     sm:px-4 sm:text-base
                     ">Visit Project</Link>
@@ -100,19 +105,18 @@ const projects = () => {
                     />
 
                     <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-                        {/* <div className="col-span-12">
+                        <div className="col-span-12">
                             <FeaturedProject
-                                title="Crypto Screener Application"
-                                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency."
-                                link={"/"}
-                                img={project1}
+                                title="WhatsApp Clone"
+                                summary="This is a whatsapp clone, built using NextJs, TailwindCSS, Prisma and PostGreSQL."
+                                link={"https://whatsapp.sarao.dev/"}
+                                img={whatsapp}
                                 type={"Featured Project"}
-                                github={"/"}
+                                youtube={"https://youtu.be/L8fZ3Q9qdxg"}
+                                github={"https://github.com/supinders39/whatsapp-clone"}
 
                             />
-                        </div> */}
+                        </div> 
                         <div className="col-span-6 sm:col-span-12">
                             <Project
                                 title="Trackify"
