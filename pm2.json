@@ -1,0 +1,17 @@
+{
+    "apps": [
+        {
+            "name": "portfolio-nextjs-3000",
+            "script": "npm",
+            "args": "start",
+            "watch": false,
+            "ignore_watch": [
+                "node_modules",
+                "dist",
+                "public"
+            ],
+            "instances": 1,
+            "exec_mode": "fork"
+        }
+    ]
+}
