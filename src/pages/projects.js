@@ -8,6 +8,9 @@ import project1 from "../../public/images/projects/crypto-screener-cover-image.j
 import trackify from "../../public/images/projects/trackify.jpeg"
 import breadit from "../../public/images/projects/breadit.jpg"
 import whatsapp from "../../public/images/projects/whatsapp.jpg"
+import partsandplanesWeb from "../../public/images/projects/partsandplanes-web.webp"
+import partsandplanesAndroid from "../../public/images/projects/p-and-p-android.webp"
+import partsandplanesIos from "../../public/images/projects/p-and-p-ios.webp"
 import ytLogo from "../../public/yt_logo.png"
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -37,7 +40,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github, youtube }) =
                 </Link>
                 <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">{summary}</p>
                 <div className="flex mt-2 items-center gap-5">
-                    <Link href={github} target="_blank" className="w-10 "><GithubIcon /></Link>
+                    <Link href={github} target="_blank" className="w-10 flex flex-col items-center"><GithubIcon />{ !github.includes("github") && "Private"}</Link>
                     {youtube &&
                         <Link href={youtube} target="_blank" className="">
                             <Image className="w-24 md:w-18  object-contain" src={ytLogo} />
@@ -82,7 +85,7 @@ const Project = ({ type, title, img, link, github, youtube }) => {
                             <Link href={youtube} target="_blank" className="">
                                 <Image className="w-24 md:w-18  object-contain" src={ytLogo} />
                         </Link>}
-                        <Link href={github} target="_blank" className="w-8 md:w-6"><GithubIcon /></Link>
+                        <Link href={github} target="_blank" className="w-8 md:w-6 flex flex-col items-center"><GithubIcon />{!github.includes("github") && "Private"}</Link>
                     </div>
 
                 </div>
@@ -107,16 +110,40 @@ const projects = () => {
                     <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
                         <div className="col-span-12">
                             <FeaturedProject
-                                title="WhatsApp Clone"
-                                summary="This is a whatsapp clone, built using NextJs, TailwindCSS, Prisma and PostGreSQL."
-                                link={"https://whatsapp.sarao.dev/"}
-                                img={whatsapp}
+                                title="PartsAndPlanes"
+                                summary="Discover a wide range of aircraft parts and procurement solutions at Parts and Planes. Your trusted partner in aviation with a comprehensive online platform."
+                                link={"https://partsandplanes.com"}
+                                img={partsandplanesWeb}
                                 type={"Featured Project"}
-                                youtube={"https://youtu.be/L8fZ3Q9qdxg"}
-                                github={"https://github.com/supinders39/whatsapp-clone"}
+                                youtube={""}
+                                github={"https://drive.google.com/file/d/1b3WEYDJ7z6HS30vLz57YVxgTtAymCJXm/view?usp=sharing"}
 
                             />
                         </div> 
+                        
+                        <div className="col-span-6 sm:col-span-12">
+                            <Project
+                                title="PartsAndPlanes - iOS App"
+                                link={"https://apps.apple.com/us/app/partsandplanes-com/id6443740061?platform=iphone"}
+                                img={partsandplanesIos}
+                                type={"Featured Project"}
+                                youtube={""}
+                                github={"https://drive.google.com/file/d/1Y2fPeGYbmeHuq8Gx_pBs-udlaHYSEK8p/view?usp=sharing"}
+
+                            />
+                        </div>
+                        <div className="col-span-6 sm:col-span-12">
+                            <Project
+                                title="PartsAndPlanes - Android App"
+                                link={"https://play.google.com/store/apps/details?id=com.partsandplanes&pcampaignid=web_share"}
+                                img={partsandplanesAndroid}
+                                type={"Featured Project"}
+                                youtube={""}
+                                github={"https://drive.google.com/file/d/13Mvd3joUfiafR8uPKe9xftFCwT0kTMbq/view?usp=sharing"}
+
+                            />
+                        </div>
+                        
                         <div className="col-span-6 sm:col-span-12">
                             <Project
                                 title="Trackify"
@@ -139,6 +166,18 @@ const projects = () => {
 
                             />
                         </div>
+                        <div className="col-span-6 sm:col-span-12">
+                            <Project
+                                title="WhatsApp Clone"
+                                // summary="This is a whatsapp clone, built using NextJs, TailwindCSS, Prisma and PostGreSQL."
+                                link={"https://whatsapp.sarao.dev/"}
+                                img={whatsapp}
+                                type={"Featured Project"}
+                                youtube={"https://youtu.be/L8fZ3Q9qdxg"}
+                                github={"https://github.com/supinders39/whatsapp-clone"}
+
+                            />
+                        </div> 
                         {/* <div className="col-span-12">
                             <FeaturedProject
                                 title="Crypto Screener Application"

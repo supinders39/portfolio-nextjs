@@ -11,7 +11,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         whileInView={{y: 0}}
         transition={{duration: 0.5, type: "spring"}}
         >
-            <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">{position} &nbsp; <a className="text-primary capitalize dark:text-primaryDark"  target="_blank" href={companyLink}>@{company}</a></h3>
+            <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">{position} &nbsp; {company && <a className="text-primary capitalize dark:text-primaryDark" target="_blank" href={companyLink}>@{company}</a>}</h3>
             <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm ">{time} | {address}</span>
             <p className="font-medium w-full md:text-sm">
                 {work}
@@ -55,6 +55,12 @@ const Experience = () => {
                         address={"Chandigarh, India"}
                         time={"Oct-2019 - Dec-2023"}
                         work="At Codeferns Technologies, I excelled in dual roles. As a Tech Lead, I provided strategic guidance and mentorship, fostering innovation. Simultaneously, I led full stack development efforts using ReactJS, React Native, Angular, NodeJs and more. My impact extended from project delivery to code quality, and I consistently drove innovation." />
+                    <Details
+                        position={"Freelancer/Contractor"}
+                        company={""}
+                        address={"Chandigarh, India"}
+                        time={"Jan-2024 - Present"}
+                        work="Since January 2024, I’ve transitioned into full-time freelancing, where I now collaborate with global clients to build robust backend systems, intuitive frontend interfaces, and high-performance mobile apps for both iOS and Android. This independent journey has further sharpened my versatility, deepened my problem-solving approach, and expanded my impact across the full software development lifecycle." />
                 </ul>
             </div>
         </div>

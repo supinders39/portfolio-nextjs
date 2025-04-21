@@ -33,12 +33,12 @@ const Skills = () => {
                 >
                     Web/Mobile/Desktop
                 </motion.div>
-                <Skill name="HTML/CSS" x={"-25vw"} y={"-2vw"} />
+                <Skill name="Kotlin" x={"-25vw"} y={"-2vw"} />
                 <Skill name="SQL/NoSQL" x={"-5vw"} y={"-10vw"} />
                 <Skill name="TypeScript" x={"20vw"} y={"6vw"} />
                 <Skill name="ReactJs" x={"0vw"} y={"12vw"} />
                 <Skill name="NextJs" x={"-20vw"} y={"-15vw"} />
-                <Skill name="Angular" x={"15vw"} y={"-12vw"} />
+                <Skill name="Swift/SwiftUI/UIKit" x={"15vw"} y={"-12vw"} />
                 <Skill name="NodeJs" x={"32vw"} y={"-5vw"} />
                 <Skill name="React-Native" x={"0vw"} y={"-20vw"} />
                 <Skill name="ElectronJs" x={"-25vw"} y={"18vw"} />
