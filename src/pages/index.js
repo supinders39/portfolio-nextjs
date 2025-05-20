@@ -2,7 +2,7 @@ import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Image from 'next/image';
 
-import profilePic from "../../public/images/profile/developer-pic-1.png"
+import profilePic from "../../public/images/profile/my-pic-1.png"
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg"
 import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
@@ -23,7 +23,7 @@ export default function Home() {
         <Layout className="pt-0 md:pt-16 sm:pt-8">
           <div className='flex items-center justify-between w-full lg:flex-col'>
             <div className='w-1/2 md:w-full'>
-              <Image src={profilePic} className="w-full h-auto lg:hidden md:inline-block md:w-full " alt="Supinder Singh" priority
+              <Image width={700} height={700} src={profilePic} className="w-full max-w-3xl h-auto lg:hidden md:inline-block md:w-full " alt="Supinder Singh" priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
             </div>

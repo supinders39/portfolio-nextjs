@@ -56,10 +56,16 @@ const Experience = () => {
                         time={"Oct-2019 - Dec-2023"}
                         work="At Codeferns Technologies, I excelled in dual roles. As a Tech Lead, I provided strategic guidance and mentorship, fostering innovation. Simultaneously, I led full stack development efforts using ReactJS, React Native, Angular, NodeJs and more. My impact extended from project delivery to code quality, and I consistently drove innovation." />
                     <Details
+                        position={"Senior Software Engineer"}
+                        company={"Ajackus"}
+                        address={"Mumbai, Maharastra, India"}
+                        time={"Jan-2024 - Jul-2024"}
+                        work="At Ajackus, I spearheaded end-to-end feature development on a large-scale project—building both front-end and back-end components—and collaborated seamlessly with a sizeable, cross-functional engineering team." />
+                    <Details
                         position={"Freelancer/Contractor"}
                         company={""}
                         address={"Chandigarh, India"}
-                        time={"Jan-2024 - Present"}
+                        time={"Jul-2024 - Present"}
                         work="Since January 2024, I’ve transitioned into full-time freelancing, where I now collaborate with global clients to build robust backend systems, intuitive frontend interfaces, and high-performance mobile apps for both iOS and Android. This independent journey has further sharpened my versatility, deepened my problem-solving approach, and expanded my impact across the full software development lifecycle." />
                 </ul>
             </div>

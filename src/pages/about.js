@@ -8,7 +8,7 @@ import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
-import profilePic from "../../public/images/profile/my-pic.jpeg";
+import profilePic from "../../public/images/profile/my-pic.jpg";
 
 const AnimatedNumbers = ({ value }) => {
     const ref = useRef(null)
