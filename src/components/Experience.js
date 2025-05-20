@@ -66,7 +66,7 @@ const Experience = () => {
                         company={""}
                         address={"Chandigarh, India"}
                         time={"Jul-2024 - Present"}
-                        work="Since January 2024, I’ve transitioned into full-time freelancing, where I now collaborate with global clients to build robust backend systems, intuitive frontend interfaces, and high-performance mobile apps for both iOS and Android. This independent journey has further sharpened my versatility, deepened my problem-solving approach, and expanded my impact across the full software development lifecycle." />
+                        work="Since Jul 2024, I’ve transitioned into full-time freelancing, where I now collaborate with global clients to build robust backend systems, intuitive frontend interfaces, and high-performance mobile apps for both iOS and Android. This independent journey has further sharpened my versatility, deepened my problem-solving approach, and expanded my impact across the full software development lifecycle." />
                 </ul>
             </div>
         </div>
